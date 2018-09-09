@@ -1,13 +1,13 @@
 # Costa-Rican-Household-Poverty-Level-Prediction
-File descriptions
-•	{train|test}.csv - the training set
+## File descriptions
+•	{train|test}.csv - the training and test set
 o	This is the main table, broken into two files for Train (with a Target column) and Test (without the Target column).
 o	One row represents one person in our data sample.
 o	Multiple people can be part of a single household. Only predictions for heads of household are scored.
 •	sample_submission.csv - a sample submission file in the correct format
 o	This file contains all test IDs and a default value.
 o	Note that ONLY the heads of household are used in scoring. All household members are included in test + the sample submission, but only heads of households are scored.
-Core Data fields
+## Core Data fields
 •	Id - a unique identifier for each row.
 •	Target - the target is an ordinal variable indicating groups of income levels. 
 1 = extreme poverty 
@@ -17,7 +17,7 @@ Core Data fields
 •	idhogar - this is a unique identifier for each household. This can be used to create household-wide features, etc. All rows in a given household will have a matching value for this identifier.
 •	parentesco1 - indicates if this person is the head of the household.
 •	This data contains 142 total columns.
-All Data fields
+## All Data fields
 Variable name, Variable description
 v2a1, Monthly rent payment
 hacdor, =1 Overcrowding by bedrooms
